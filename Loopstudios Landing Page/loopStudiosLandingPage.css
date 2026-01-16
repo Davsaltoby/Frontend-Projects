@@ -1,0 +1,483 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:  hsl(0, 0%, 100%);
+  overflow-x: hidden;
+}
+
+#top-header nav ul {
+  display: flex;
+  justify-content: space-between; 
+  list-style-type: none;
+  width: 350px;
+}
+
+#top-header nav ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "Alata", sans-serif;
+  color: hsl(0, 0%, 100%);
+  position: relative;
+}
+
+#top-header nav ul li a:hover::after {
+  content: "";
+  width: 25px;
+  position: absolute;
+  bottom: -13px;
+  left: 26%;
+  border-bottom: 2px solid hsl(0, 0%, 100%);
+  
+}
+
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-image: url("./loopstudios-landing-page-main/images/desktop/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#header-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 80vw;
+  margin: 0 auto 0;
+  padding-top: 65px;
+}
+
+#header-text {
+  border: 2px solid hsl(0, 0%, 100%);
+  display: inline-block;
+  width: 615px;
+  padding: 25px 40px 30px;
+}
+
+#header-text h1 {
+  font-size: 70px;
+  color: hsl(0, 0%, 100%);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 250;
+}
+
+#photo-text {
+  display: flex;
+  margin-top: 150px;
+  margin-bottom: 155px;
+  width: 80vw;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#photo-text img {
+  width: 670px;
+}
+
+#textfloat-container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 80px 0px 0px 60px;
+  align-self: flex-end;
+  position: absolute;
+  right: -85px;
+  bottom: 0;
+  width: 550px;
+  height: 300px;
+  /* border: 2px solid red; */
+}
+
+#textfloat-container h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+}
+
+#textfloat-container p {
+  overflow-x: hidden;
+  margin-top: 35px;
+  margin-right: 50px;
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+  color: hsl(0, 0%, 52%);
+  line-height: 25px;
+}
+
+#grid-section {
+  width: 80vw;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  position: relative;
+}
+
+#grid-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+  /* border: 2px solid red; */
+}
+
+#grid-title-container h3 {
+  font-size: 45px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 320;
+}
+
+#grid-title-container button {
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 50%);
+  letter-spacing: 5px;
+  padding: 10px 35px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+#grid-title-container button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  justify-items: center;
+  gap: 29px;
+  position: relative;
+}
+
+#grid-container figure img {
+  filter: brightness(88%);
+  width: 225px;
+  transition: filter 0.8s ease-in-out;
+}
+
+#grid-container figure:hover img {
+  filter: opacity(35%) brightness(50%); 
+}
+
+.grid-img-cap-top {
+  font-family: "Josefin Sans";
+  font-size: 30px;
+  font-weight: 310;
+  position: absolute;
+  bottom: 34px;
+  left: 33px;
+  color: hsl(0, 0%, 90%);
+}
+
+.grid-img-cap-bottom {
+  font-family: "Josefin Sans";
+  font-size: 30px;
+  font-weight: 310;
+  position: absolute;
+  bottom: 34px;
+  left: 33px;
+  color: white;
+}
+
+figure:hover .grid-img-cap-top, figure:hover .grid-img-cap-bottom {
+  color: black;
+} 
+
+#grid-container figure {
+  cursor: pointer;
+  position: relative;
+}
+
+footer {
+  background-color: black;
+  margin-top: 160px;
+}
+
+#inner-footer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  width: 80vw;
+}
+
+#loopstudio-bottom-nav nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  list-style-type: none;
+}
+
+#loopstudio-bottom-nav nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: hsl(0, 0%, 85%);
+  position: relative;
+  font-family: 'Alata', sans-serif;
+}
+
+#loopstudio-bottom-nav nav ul li a:hover::after {
+  content: "";
+  width: 20px;
+  position: absolute;
+  bottom: -13px;
+  left: 26%;
+  border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+
+#loopstudio-bottom-nav img {
+  width: 130px;
+}
+
+#loopstudio-bottom-social-link p {
+  color: hsl(0, 0%, 45%);
+  font-size: 14px;
+  font-family: "Alata", sans-serif;
+}
+
+#loopstudio-bottom-social-link, #loopstudio-bottom-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#loopstudio-bottom-social-link nav {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#loopstudio-bottom-social-link nav a img {
+  width: 21px;
+  position: relative;
+}
+
+#loopstudio-bottom-social-link nav a img:hover::after {
+  content: "";
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  border-bottom: 2px solid hsl(0, 92%, 45%);
+}
+
+#dropdown-btn {
+  display: none;
+}
+
+#close-btn img {
+    display: none;
+  }
+
+
+@media screen and (max-width: 768px) {
+  #dropdown-btn {
+    display: inline-block;
+    width: 35px;
+    cursor: pointer;
+  }
+
+  #top-nav-container #dropdown {
+    display: none;
+  }
+
+  #header-text {
+    width: 530px;
+    border-width: 4px;
+  }
+
+  #header-text h1 {
+    font-size:65px;
+  }
+
+  .header {
+    position: relative;
+    background-image: url("");
+    background-color: black;
+    height: 100%;
+  }
+
+  header {
+    background-image: url("./loopstudios-landing-page-main/images/mobile/image-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-bottom: 380px;
+  }
+
+  #header-inner-container {
+    width: 100%;
+    height: 100%; 
+    padding: 65px 40px 0;
+    gap: 260px;
+  }
+  
+  #top-header.direction {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 250px;
+  }
+
+  #top-header nav ul {
+    width: auto;
+  }
+
+  #top-header nav ul li a {
+    font-size: 45px;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 250;
+    line-height: 90px;
+  }
+
+  #logo img {
+    width: 265px;
+  }
+
+  #logo-closeBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  #close-btn img {
+    width: 35px;
+    cursor: pointer;
+    display: block;
+  }
+
+  #photo-text {
+    width: 100%;
+    padding: 0 40px;
+    display: block;
+    height: 100%;
+  }
+
+  #photo-text img {
+  width: 100%;
+  }
+
+  #textfloat-container{
+    position: static;
+    padding: 80px 0 0;
+    text-align: center;
+    height: 100%;
+  }
+
+  #textfloat-container h2 {
+    font-size: 52px;
+    font-weight: 310;
+  }
+
+  #textfloat-container p {
+    margin: 35px 0 0;
+    font-size: 25px;
+    line-height: 45px;
+    padding: 0 40px;
+  }
+
+  #grid-title-container {
+    display: block;
+    text-align: center;
+  }
+
+  #grid-title-container h3 {
+    font-size: 60px;
+    font-weight: 300;
+  }
+
+  #grid-title-container button {
+    position: absolute;
+    bottom: -130px;
+    right: 45px;
+    transform: translateX(-50%);
+    font-size: 25px;
+    padding: 20px 35px;
+    width: 270px;
+  }
+
+  #grid-section {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  #grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  #grid-container figure img {
+    width: 100%;
+  }
+
+  .grid-img-cap-top {
+    font-size: 40px;
+    bottom: 30px;
+  }
+
+  .grid-img-cap-bottom {
+    font-size: 40px;
+    bottom: 30px;
+    margin-right: 250px;
+  }
+
+  footer {
+    margin-top: 300px;
+    padding: 80px 0;
+  }
+
+  #inner-footer {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  #loopstudio-bottom-nav {
+    gap: 65px;
+  }
+
+  #loopstudio-bottom-nav img {
+    width: 250px;
+  }
+
+  #loopstudio-bottom-nav nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: auto;
+  }
+
+  #loopstudio-bottom-social-link nav {
+    align-self: center;
+    gap: 30px;
+  }
+  
+  #loopstudio-bottom-nav nav ul li a {
+    font-size: 28px;
+    color: hsl(0, 0%, 95%);
+  }
+
+  #loopstudio-bottom-social-link nav a img {
+  width: 45px;
+}
+
+  #loopstudio-bottom-social-link p {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+  }
+}
+
+
+
+
